@@ -6,6 +6,10 @@ body {
   padding: 1em;
 }
 
+#mainHeader,#mainContent {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 #siteTitle {
   font-size: 3em;
 }
