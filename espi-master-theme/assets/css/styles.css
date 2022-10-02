@@ -6,10 +6,21 @@ body {
   padding: 1em;
 }
 
+
+/* main "container" control */
 #mainHeader,#mainContent {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+#mainHeader {
+
+}
 #siteTitle {
   font-size: 3em;
+}
+
+#mainContent {
+  display: grid;
+
 }

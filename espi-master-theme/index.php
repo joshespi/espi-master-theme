@@ -25,13 +25,18 @@
 
 
 
-    <h1>Latest Posts</h1>
   <section id="mainContent">
+
     <?php
+    if (is_front_page()) {
+    ?>
+      <h1>Latest Posts</h1>
+      <?php
+    }
     if (have_posts()) {
       while (have_posts()) {
         the_post();
-    ?>
+      ?>
         <article class="post">
           <header class="article-header">
             <h1><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h1>
@@ -62,9 +67,9 @@
       echo 'no content found';
     } //end if on main loop
     ?>
-    <aside id="MainSidebar">
+    <!-- <aside id="MainSidebar">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt. Lectus proin nibh nisl condimentum id venenatis. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Quis viverra nibh cras pulvinar mattis nunc. Lacus sed viverra tellus in. Risus commodo viverra maecenas accumsan. Risus ultricies tristique nulla aliquet enim tortor at auctor urna. Non consectetur a erat nam. Nullam non nisi est sit amet facilisis magna etiam. Ornare massa eget egestas purus viverra accumsan in nisl. Donec ac odio tempor orci dapibus ultrices. Viverra tellus in hac habitasse platea dictumst vestibulum. Ut morbi tincidunt augue interdum velit euismod in pellentesque. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Sit amet est placerat in. Sed odio morbi quis commodo odio. Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Volutpat odio facilisis mauris sit. Maecenas ultricies mi eget mauris pharetra et.
-    </aside>
+    </aside> -->
   </section>
 
 
