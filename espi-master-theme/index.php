@@ -39,7 +39,7 @@
       ?>
         <article class="post">
           <header class="article-header">
-            <?php the_post_thumbnail('large', array('class' => 'featured')); ?>
+
             <?php
             if (is_singular()) {
             ?>
@@ -51,6 +51,7 @@
             <?php
             }
             ?>
+            <?php the_post_thumbnail('thumbnail', array('class' => 'featured')); ?>
             <ul>
               <li><?php the_author(); ?></li>
               <li><?php the_date(); ?></li>
