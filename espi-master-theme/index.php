@@ -45,13 +45,10 @@
           <?php
           if (is_singular()) {
             the_content();
-            if ($comments) {
-              foreach ($comments as $comment) {
-                echo '<p>' . $comment->comment_content . '</p>';
-              }
-            } else {
-              echo 'No comments found.';
-            }
+            // If comments are open or we have at least one comment, load up the comment template.
+            if (comments_open() || get_comments_number()) :
+              comments_template();
+            endif;
           } else {
             the_excerpt();
           }
