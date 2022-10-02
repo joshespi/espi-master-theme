@@ -15,7 +15,7 @@
 
 
   <header id="mainHeader">
-    <p id="siteTitle"><?php echo get_bloginfo('name'); ?></p>
+    <p id="siteTitle"><a href="<?php echo get_bloginfo('url'); ?>"><?php echo get_bloginfo('name'); ?></a></p>
   </header>
 
 
